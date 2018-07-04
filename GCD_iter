@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul  4 07:30:55 2018
+
+@author: Ohzie
+"""
+
+def gcdIter(a, b):
+    '''
+    a, b: positive integers
+    
+    returns: a positive integer, the greatest common divisor of a & b.
+    '''
+    if a == b:
+
+        return a
+    temp = 0
+
+    for gdc in range(1, max(a, b)):
+
+        if (a % gdc == 0) & (b % gdc == 0):
+
+            temp = gdc
+
+    return temp
